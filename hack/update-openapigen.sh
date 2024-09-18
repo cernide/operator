@@ -18,7 +18,7 @@ CODEGEN_PKG=${PROJECT_ROOT}/vendor/k8s.io/kube-openapi
 
 # Generating OpenAPI specification
 go run ${CODEGEN_PKG}/cmd/openapi-gen/openapi-gen.go \
-    --input-dirs github.com/polyaxon/mloperator/api/${VERSION} \
+    --input-dirs github.com/polyaxon/operator/api/${VERSION} \
     --output-package api/${VERSION}/ \
     --go-header-file hack/boilerplate.go.txt \
     --report-filename $CURRENT_VIOLATION_EXCEPTIONS \

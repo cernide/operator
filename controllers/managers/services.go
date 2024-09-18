@@ -7,7 +7,7 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/intstr"
 
-	operationv1 "github.com/polyaxon/mloperator/api/v1"
+	operationv1 "github.com/polyaxon/operator/api/v1"
 )
 
 const (

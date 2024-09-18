@@ -23,9 +23,9 @@ import (
 	// pytorchjobv1 "github.com/kubeflow/pytorch-operator/pkg/apis/pytorch/v1"
 	// tfjobv1 "github.com/kubeflow/tf-operator/pkg/apis/tensorflow/v1"
 
-	operationv1 "github.com/polyaxon/mloperator/api/v1"
-	"github.com/polyaxon/mloperator/controllers"
-	"github.com/polyaxon/mloperator/controllers/config"
+	operationv1 "github.com/polyaxon/operator/api/v1"
+	"github.com/polyaxon/operator/controllers"
+	"github.com/polyaxon/operator/controllers/config"
 	// +kubebuilder:scaffold:imports
 )
 

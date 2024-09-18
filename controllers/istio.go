@@ -8,9 +8,9 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	operationv1 "github.com/polyaxon/mloperator/api/v1"
-	"github.com/polyaxon/mloperator/controllers/kinds"
-	"github.com/polyaxon/mloperator/controllers/managers"
+	operationv1 "github.com/polyaxon/operator/api/v1"
+	"github.com/polyaxon/operator/controllers/kinds"
+	"github.com/polyaxon/operator/controllers/managers"
 )
 
 func (r *OperationReconciler) reconcileVirtualService(ctx context.Context, instance *operationv1.Operation) error {

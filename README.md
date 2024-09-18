@@ -1,5 +1,5 @@
 [![License: Apache 2](https://img.shields.io/badge/License-apache2-green.svg)](LICENSE)
-[![mloperator](https://github.com/polyaxon/mloperator/actions/workflows/tests.yml/badge.svg)](https://github.com/polyaxon/mloperator/actions/workflows/tests.yml)
+[![operator](https://github.com/polyaxon/operator/actions/workflows/tests.yml/badge.svg)](https://github.com/polyaxon/operator/actions/workflows/tests.yml)
 [![Slack](https://img.shields.io/badge/chat-on%20slack-aadada.svg?logo=slack&longCache=true)](https://polyaxon.com/slack/)
 [![Docs](https://img.shields.io/badge/docs-stable-brightgreen.svg?style=flat)](https://polyaxon.com/docs/)
 [![GitHub](https://img.shields.io/badge/issue_tracker-github-blue?logo=github)](https://github.com/polyaxon/polyaxon/issues)
@@ -8,7 +8,7 @@
 <br>
 <p align="center">
   <p align="center">
-    <img src="https://raw.githubusercontent.com/polyaxon/polyaxon/master/artifacts/packages/mloperator.svg" alt="mloperator" height="100">
+    <img src="https://raw.githubusercontent.com/polyaxon/polyaxon/master/artifacts/packages/operator.svg" alt="operator" height="100">
   </p>
 </p>
 <br>
@@ -21,7 +21,7 @@ Kubernetes offers the facility of extending it's API through the concept of 'Ope
 
 This project is a Kubernetes controller that manages and watches Customer Resource Definitions (CRDs) that define primitives to handle, operate and reconcile operations like: builds, jobs, experiments, distributed training, notebooks, tensorboards, kubeflow integrations, ...
 
-![MLOperator Architecture](./artifacts/MLOperator-architecture.png)
+![Operator Architecture](./artifacts/Operator-architecture.png)
 
 ## Kubeflow, Ray, and Dask operators
 

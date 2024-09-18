@@ -8,10 +8,10 @@ import (
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/runtime"
 
-	operationv1 "github.com/polyaxon/mloperator/api/v1"
-	"github.com/polyaxon/mloperator/controllers/kinds"
-	"github.com/polyaxon/mloperator/controllers/rayapi"
-	"github.com/polyaxon/mloperator/controllers/utils"
+	operationv1 "github.com/polyaxon/operator/api/v1"
+	"github.com/polyaxon/operator/controllers/kinds"
+	"github.com/polyaxon/operator/controllers/rayapi"
+	"github.com/polyaxon/operator/controllers/utils"
 )
 
 /*

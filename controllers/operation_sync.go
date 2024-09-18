@@ -3,9 +3,9 @@ package controllers
 import (
 	"time"
 
-	operationv1 "github.com/polyaxon/mloperator/api/v1"
-	"github.com/polyaxon/mloperator/controllers/config"
-	"github.com/polyaxon/mloperator/controllers/plugins"
+	operationv1 "github.com/polyaxon/operator/api/v1"
+	"github.com/polyaxon/operator/controllers/config"
+	"github.com/polyaxon/operator/controllers/plugins"
 )
 
 const (

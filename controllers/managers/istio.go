@@ -5,8 +5,8 @@ import (
 
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 
-	"github.com/polyaxon/mloperator/controllers/config"
-	"github.com/polyaxon/mloperator/controllers/kinds"
+	"github.com/polyaxon/operator/controllers/config"
+	"github.com/polyaxon/operator/controllers/kinds"
 )
 
 const (
@@ -37,7 +37,7 @@ func GenerateVirtualService(name, namespace string) (*unstructured.Unstructured,
 		return nil, fmt.Errorf("Set .spec.hosts error: %v", err)
 	}
 
-	istioGateway := config.GetStrEnv(config.IstioGateway, "polyaxon/mloperator-gateway")
+	istioGateway := config.GetStrEnv(config.IstioGateway, "polyaxon/operator-gateway")
 
 	if err := unstructured.SetNestedStringSlice(virtualService.Object, []string{istioGateway},
 		"spec", "gateways"); err != nil {

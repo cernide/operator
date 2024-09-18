@@ -1,4 +1,4 @@
-module github.com/polyaxon/mloperator
+module github.com/polyaxon/operator
 
 go 1.19
 

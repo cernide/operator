@@ -4,7 +4,7 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	operationv1 "github.com/polyaxon/mloperator/api/v1"
+	operationv1 "github.com/polyaxon/operator/api/v1"
 )
 
 // JobStatus represents the current observed state of the training Job.

@@ -1,8 +1,8 @@
 domain: polyaxon.com
 layout:
 - go.kubebuilder.io/v3
-projectName: mloperator
-repo: github.com/polyaxon/mloperator
+projectName: operator
+repo: github.com/polyaxon/operator
 resources:
 - api:
     crdVersion: v1
@@ -11,6 +11,6 @@ resources:
   domain: polyaxon.com
   group: core
   kind: Operation
-  path: github.com/polyaxon/mloperator/api/v1
+  path: github.com/polyaxon/operator/api/v1
   version: v1
 version: "3"

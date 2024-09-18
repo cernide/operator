@@ -5,9 +5,9 @@ import (
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/runtime"
 
-	operationv1 "github.com/polyaxon/mloperator/api/v1"
-	"github.com/polyaxon/mloperator/controllers/kfapi"
-	"github.com/polyaxon/mloperator/controllers/managers"
+	operationv1 "github.com/polyaxon/operator/api/v1"
+	"github.com/polyaxon/operator/controllers/kfapi"
+	"github.com/polyaxon/operator/controllers/managers"
 )
 
 // Common logic for reconciling job status
