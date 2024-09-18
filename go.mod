@@ -1,4 +1,4 @@
-module github.com/polyaxon/operator
+module github.com/cernide/operator
 
 go 1.19
 

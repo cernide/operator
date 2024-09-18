@@ -9,8 +9,8 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	operationv1 "github.com/polyaxon/operator/api/v1"
-	"github.com/polyaxon/operator/controllers/managers"
+	operationv1 "github.com/cernide/operator/api/v1"
+	"github.com/cernide/operator/controllers/managers"
 )
 
 func (r *OperationReconciler) reconcileJobOp(ctx context.Context, instance *operationv1.Operation) (ctrl.Result, error) {

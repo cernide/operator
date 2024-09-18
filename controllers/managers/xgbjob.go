@@ -6,10 +6,10 @@ import (
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/runtime"
 
-	operationv1 "github.com/polyaxon/operator/api/v1"
-	"github.com/polyaxon/operator/controllers/kfapi"
-	"github.com/polyaxon/operator/controllers/kinds"
-	"github.com/polyaxon/operator/controllers/utils"
+	operationv1 "github.com/cernide/operator/api/v1"
+	"github.com/cernide/operator/controllers/kfapi"
+	"github.com/cernide/operator/controllers/kinds"
+	"github.com/cernide/operator/controllers/utils"
 )
 
 // GenerateXGBJob returns a XGBJob

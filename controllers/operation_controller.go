@@ -15,10 +15,10 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/handler"
 	"sigs.k8s.io/controller-runtime/pkg/source"
 
-	operationv1 "github.com/polyaxon/operator/api/v1"
-	"github.com/polyaxon/operator/controllers/config"
-	"github.com/polyaxon/operator/controllers/kinds"
-	"github.com/polyaxon/operator/controllers/utils"
+	operationv1 "github.com/cernide/operator/api/v1"
+	"github.com/cernide/operator/controllers/config"
+	"github.com/cernide/operator/controllers/kinds"
+	"github.com/cernide/operator/controllers/utils"
 )
 
 // OperationReconciler reconciles a Operation object

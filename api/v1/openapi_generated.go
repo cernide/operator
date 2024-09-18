@@ -14,17 +14,17 @@ import (
 
 func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenAPIDefinition {
 	return map[string]common.OpenAPIDefinition{
-		"github.com/polyaxon/operator/api/v1.BatchJobSpec":       schema_polyaxon_operator_api_v1_BatchJobSpec(ref),
-		"github.com/polyaxon/operator/api/v1.MPIJobSpec":         schema_polyaxon_operator_api_v1_MPIJobSpec(ref),
-		"github.com/polyaxon/operator/api/v1.Operation":          schema_polyaxon_operator_api_v1_Operation(ref),
-		"github.com/polyaxon/operator/api/v1.OperationCondition": schema_polyaxon_operator_api_v1_OperationCondition(ref),
-		"github.com/polyaxon/operator/api/v1.OperationStatus":    schema_polyaxon_operator_api_v1_OperationStatus(ref),
-		"github.com/polyaxon/operator/api/v1.PytorchJobSpec":     schema_polyaxon_operator_api_v1_PytorchJobSpec(ref),
-		"github.com/polyaxon/operator/api/v1.ServiceSpec":        schema_polyaxon_operator_api_v1_ServiceSpec(ref),
-		"github.com/polyaxon/operator/api/v1.TFJobSpec":          schema_polyaxon_operator_api_v1_TFJobSpec(ref),
-		"github.com/polyaxon/operator/api/v1.DaskJobSpec":        schema_polyaxon_operator_api_v1_DaskJobSpec(ref),
-		"github.com/polyaxon/operator/api/v1.RayJobSpec":         schema_polyaxon_operator_api_v1_RayJobSpec(ref),
-		"github.com/polyaxon/operator/api/v1.TerminationSpec":    schema_polyaxon_operator_api_v1_TerminationSpec(ref),
+		"github.com/cernide/operator/api/v1.BatchJobSpec":       schema_polyaxon_operator_api_v1_BatchJobSpec(ref),
+		"github.com/cernide/operator/api/v1.MPIJobSpec":         schema_polyaxon_operator_api_v1_MPIJobSpec(ref),
+		"github.com/cernide/operator/api/v1.Operation":          schema_polyaxon_operator_api_v1_Operation(ref),
+		"github.com/cernide/operator/api/v1.OperationCondition": schema_polyaxon_operator_api_v1_OperationCondition(ref),
+		"github.com/cernide/operator/api/v1.OperationStatus":    schema_polyaxon_operator_api_v1_OperationStatus(ref),
+		"github.com/cernide/operator/api/v1.PytorchJobSpec":     schema_polyaxon_operator_api_v1_PytorchJobSpec(ref),
+		"github.com/cernide/operator/api/v1.ServiceSpec":        schema_polyaxon_operator_api_v1_ServiceSpec(ref),
+		"github.com/cernide/operator/api/v1.TFJobSpec":          schema_polyaxon_operator_api_v1_TFJobSpec(ref),
+		"github.com/cernide/operator/api/v1.DaskJobSpec":        schema_polyaxon_operator_api_v1_DaskJobSpec(ref),
+		"github.com/cernide/operator/api/v1.RayJobSpec":         schema_polyaxon_operator_api_v1_RayJobSpec(ref),
+		"github.com/cernide/operator/api/v1.TerminationSpec":    schema_polyaxon_operator_api_v1_TerminationSpec(ref),
 	}
 }
 
@@ -38,7 +38,7 @@ func schema_polyaxon_operator_api_v1_BatchJobSpec(ref common.ReferenceCallback) 
 					"termination": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Specifies the number of retries before marking this job failed.",
-							Ref:         ref("github.com/polyaxon/operator/api/v1.TerminationSpec"),
+							Ref:         ref("github.com/cernide/operator/api/v1.TerminationSpec"),
 						},
 					},
 					"template": {
@@ -52,7 +52,7 @@ func schema_polyaxon_operator_api_v1_BatchJobSpec(ref common.ReferenceCallback) 
 			},
 		},
 		Dependencies: []string{
-			"github.com/polyaxon/operator/api/v1.TerminationSpec", "k8s.io/api/core/v1.PodTemplateSpec"},
+			"github.com/cernide/operator/api/v1.TerminationSpec", "k8s.io/api/core/v1.PodTemplateSpec"},
 	}
 }
 
@@ -66,7 +66,7 @@ func schema_polyaxon_operator_api_v1_MPIJobSpec(ref common.ReferenceCallback) co
 					"termination": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Specifies the number of retries before marking this job failed.",
-							Ref:         ref("github.com/polyaxon/operator/api/v1.TerminationSpec"),
+							Ref:         ref("github.com/cernide/operator/api/v1.TerminationSpec"),
 						},
 					},
 					"cleanPodPolicy": {
@@ -102,7 +102,7 @@ func schema_polyaxon_operator_api_v1_MPIJobSpec(ref common.ReferenceCallback) co
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubeflow/tf-operator/pkg/apis/common/v1.ReplicaSpec", "github.com/polyaxon/operator/api/v1.TerminationSpec"},
+			"github.com/kubeflow/tf-operator/pkg/apis/common/v1.ReplicaSpec", "github.com/cernide/operator/api/v1.TerminationSpec"},
 	}
 }
 
@@ -135,56 +135,56 @@ func schema_polyaxon_operator_api_v1_Operation(ref common.ReferenceCallback) com
 					"batchJobSpec": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Specification of the desired behavior of a job.",
-							Ref:         ref("github.com/polyaxon/operator/api/v1.BatchJobSpec"),
+							Ref:         ref("github.com/cernide/operator/api/v1.BatchJobSpec"),
 						},
 					},
 					"serviceSpec": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Specification of the desired behavior of a Service.",
-							Ref:         ref("github.com/polyaxon/operator/api/v1.ServiceSpec"),
+							Ref:         ref("github.com/cernide/operator/api/v1.ServiceSpec"),
 						},
 					},
 					"tfJobSpec": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Specification of the desired behavior of a TFJob.",
-							Ref:         ref("github.com/polyaxon/operator/api/v1.TFJobSpec"),
+							Ref:         ref("github.com/cernide/operator/api/v1.TFJobSpec"),
 						},
 					},
 					"pytorchJobSpec": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Specification of the desired behavior of a PytorchJob.",
-							Ref:         ref("github.com/polyaxon/operator/api/v1.PytorchJobSpec"),
+							Ref:         ref("github.com/cernide/operator/api/v1.PytorchJobSpec"),
 						},
 					},
 					"mpiJobSpec": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Specification of the desired behavior of a MPIJob.",
-							Ref:         ref("github.com/polyaxon/operator/api/v1.MPIJobSpec"),
+							Ref:         ref("github.com/cernide/operator/api/v1.MPIJobSpec"),
 						},
 					},
 					"daskJobSpec": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Specification of the desired behavior of a DaskJob.",
-							Ref:         ref("github.com/polyaxon/operator/api/v1.DaskJobSpec"),
+							Ref:         ref("github.com/cernide/operator/api/v1.DaskJobSpec"),
 						},
 					},
 					"rayJobSpec": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Specification of the desired behavior of a RayJob.",
-							Ref:         ref("github.com/polyaxon/operator/api/v1.RayJobSpec"),
+							Ref:         ref("github.com/cernide/operator/api/v1.RayJobSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Current status of an op.",
-							Ref:         ref("github.com/polyaxon/operator/api/v1.OperationStatus"),
+							Ref:         ref("github.com/cernide/operator/api/v1.OperationStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/polyaxon/operator/api/v1.BatchJobSpec", "github.com/polyaxon/operator/api/v1.MPIJobSpec", "github.com/polyaxon/operator/api/v1.OperationStatus", "github.com/polyaxon/operator/api/v1.PytorchJobSpec", "github.com/polyaxon/operator/api/v1.ServiceSpec", "github.com/polyaxon/operator/api/v1.TFJobSpec", "github.com/polyaxon/operator/api/v1.RayJobSpec", "github.com/polyaxon/operator/api/v1.DaskJobSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/cernide/operator/api/v1.BatchJobSpec", "github.com/cernide/operator/api/v1.MPIJobSpec", "github.com/cernide/operator/api/v1.OperationStatus", "github.com/cernide/operator/api/v1.PytorchJobSpec", "github.com/cernide/operator/api/v1.ServiceSpec", "github.com/cernide/operator/api/v1.TFJobSpec", "github.com/cernide/operator/api/v1.RayJobSpec", "github.com/cernide/operator/api/v1.DaskJobSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -264,7 +264,7 @@ func schema_polyaxon_operator_api_v1_OperationStatus(ref common.ReferenceCallbac
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/polyaxon/operator/api/v1.OperationCondition"),
+										Ref: ref("github.com/cernide/operator/api/v1.OperationCondition"),
 									},
 								},
 							},
@@ -292,7 +292,7 @@ func schema_polyaxon_operator_api_v1_OperationStatus(ref common.ReferenceCallbac
 			},
 		},
 		Dependencies: []string{
-			"github.com/polyaxon/operator/api/v1.OperationCondition", "k8s.io/apimachinery/pkg/apis/meta/v1.Time"},
+			"github.com/cernide/operator/api/v1.OperationCondition", "k8s.io/apimachinery/pkg/apis/meta/v1.Time"},
 	}
 }
 
@@ -306,7 +306,7 @@ func schema_polyaxon_operator_api_v1_PytorchJobSpec(ref common.ReferenceCallback
 					"termination": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Specifies the number of retries before marking this job failed.",
-							Ref:         ref("github.com/polyaxon/operator/api/v1.TerminationSpec"),
+							Ref:         ref("github.com/cernide/operator/api/v1.TerminationSpec"),
 						},
 					},
 					"cleanPodPolicy": {
@@ -335,7 +335,7 @@ func schema_polyaxon_operator_api_v1_PytorchJobSpec(ref common.ReferenceCallback
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubeflow/tf-operator/pkg/apis/common/v1.ReplicaSpec", "github.com/polyaxon/operator/api/v1.TerminationSpec"},
+			"github.com/kubeflow/tf-operator/pkg/apis/common/v1.ReplicaSpec", "github.com/cernide/operator/api/v1.TerminationSpec"},
 	}
 }
 
@@ -349,7 +349,7 @@ func schema_polyaxon_operator_api_v1_ServiceSpec(ref common.ReferenceCallback) c
 					"termination": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Specifies the number of retries before marking this job failed.",
-							Ref:         ref("github.com/polyaxon/operator/api/v1.TerminationSpec"),
+							Ref:         ref("github.com/cernide/operator/api/v1.TerminationSpec"),
 						},
 					},
 					"replicas": {
@@ -384,7 +384,7 @@ func schema_polyaxon_operator_api_v1_ServiceSpec(ref common.ReferenceCallback) c
 			},
 		},
 		Dependencies: []string{
-			"github.com/polyaxon/operator/api/v1.TerminationSpec", "k8s.io/api/core/v1.PodTemplateSpec"},
+			"github.com/cernide/operator/api/v1.TerminationSpec", "k8s.io/api/core/v1.PodTemplateSpec"},
 	}
 }
 
@@ -398,7 +398,7 @@ func schema_polyaxon_operator_api_v1_TFJobSpec(ref common.ReferenceCallback) com
 					"termination": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Specifies the number of retries before marking this job failed.",
-							Ref:         ref("github.com/polyaxon/operator/api/v1.TerminationSpec"),
+							Ref:         ref("github.com/cernide/operator/api/v1.TerminationSpec"),
 						},
 					},
 					"cleanPodPolicy": {
@@ -427,7 +427,7 @@ func schema_polyaxon_operator_api_v1_TFJobSpec(ref common.ReferenceCallback) com
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubeflow/tf-operator/pkg/apis/common/v1.ReplicaSpec", "github.com/polyaxon/operator/api/v1.TerminationSpec"},
+			"github.com/kubeflow/tf-operator/pkg/apis/common/v1.ReplicaSpec", "github.com/cernide/operator/api/v1.TerminationSpec"},
 	}
 }
 
@@ -441,14 +441,14 @@ func schema_polyaxon_operator_api_v1_RayJobSpec(ref common.ReferenceCallback) co
 					"termination": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Specifies the number of retries before marking this job failed.",
-							Ref:         ref("github.com/polyaxon/operator/api/v1.TerminationSpec"),
+							Ref:         ref("github.com/cernide/operator/api/v1.TerminationSpec"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubeflow/tf-operator/pkg/apis/common/v1.ReplicaSpec", "github.com/polyaxon/operator/api/v1.TerminationSpec"},
+			"github.com/kubeflow/tf-operator/pkg/apis/common/v1.ReplicaSpec", "github.com/cernide/operator/api/v1.TerminationSpec"},
 	}
 }
 
@@ -462,14 +462,14 @@ func schema_polyaxon_operator_api_v1_DaskJobSpec(ref common.ReferenceCallback) c
 					"termination": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Specifies the number of retries before marking this job failed.",
-							Ref:         ref("github.com/polyaxon/operator/api/v1.TerminationSpec"),
+							Ref:         ref("github.com/cernide/operator/api/v1.TerminationSpec"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubeflow/tf-operator/pkg/apis/common/v1.ReplicaSpec", "github.com/polyaxon/operator/api/v1.TerminationSpec"},
+			"github.com/kubeflow/tf-operator/pkg/apis/common/v1.ReplicaSpec", "github.com/cernide/operator/api/v1.TerminationSpec"},
 	}
 }
 

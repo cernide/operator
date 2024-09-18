@@ -5,8 +5,8 @@ import (
 
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 
-	"github.com/polyaxon/operator/controllers/config"
-	"github.com/polyaxon/operator/controllers/kinds"
+	"github.com/cernide/operator/controllers/config"
+	"github.com/cernide/operator/controllers/kinds"
 )
 
 const (

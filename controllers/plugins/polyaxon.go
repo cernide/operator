@@ -11,8 +11,8 @@ import (
 	httptransport "github.com/go-openapi/runtime/client"
 	netContext "golang.org/x/net/context"
 
-	operationv1 "github.com/polyaxon/operator/api/v1"
-	"github.com/polyaxon/operator/controllers/config"
+	operationv1 "github.com/cernide/operator/api/v1"
+	"github.com/cernide/operator/controllers/config"
 
 	polyaxonSDK "github.com/polyaxon/sdks/go/http_client/v1/service_client"
 	"github.com/polyaxon/sdks/go/http_client/v1/service_client/runs_v1"

@@ -20,7 +20,7 @@ cp dist/protoc-gen-gogo $GOPATH/bin
 # --apimachinery-packages= option so that go-to-protobuf can locate the types, but prefixed with a
 # '-' so that go-to-protobuf will not generate .proto files for it.
 PACKAGES=(
-    github.com/polyaxon/polyaxon/proto/api/v1
+    github.com/cernide/cernide/proto/api/v1
 )
 
 APIMACHINERY_PKGS=(

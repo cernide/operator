@@ -2,7 +2,7 @@ domain: polyaxon.com
 layout:
 - go.kubebuilder.io/v3
 projectName: operator
-repo: github.com/polyaxon/operator
+repo: github.com/cernide/operator
 resources:
 - api:
     crdVersion: v1
@@ -11,6 +11,6 @@ resources:
   domain: polyaxon.com
   group: core
   kind: Operation
-  path: github.com/polyaxon/operator/api/v1
+  path: github.com/cernide/operator/api/v1
   version: v1
 version: "3"

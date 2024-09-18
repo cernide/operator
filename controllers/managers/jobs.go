@@ -7,7 +7,7 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/polyaxon/operator/controllers/utils"
+	"github.com/cernide/operator/controllers/utils"
 )
 
 // CopyJobFields copies the owned fields from one Job to another

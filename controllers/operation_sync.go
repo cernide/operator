@@ -3,9 +3,9 @@ package controllers
 import (
 	"time"
 
-	operationv1 "github.com/polyaxon/operator/api/v1"
-	"github.com/polyaxon/operator/controllers/config"
-	"github.com/polyaxon/operator/controllers/plugins"
+	operationv1 "github.com/cernide/operator/api/v1"
+	"github.com/cernide/operator/controllers/config"
+	"github.com/cernide/operator/controllers/plugins"
 )
 
 const (

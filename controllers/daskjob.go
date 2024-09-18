@@ -10,10 +10,10 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	operationv1 "github.com/polyaxon/operator/api/v1"
-	"github.com/polyaxon/operator/controllers/daskapi"
-	"github.com/polyaxon/operator/controllers/kinds"
-	"github.com/polyaxon/operator/controllers/managers"
+	operationv1 "github.com/cernide/operator/api/v1"
+	"github.com/cernide/operator/controllers/daskapi"
+	"github.com/cernide/operator/controllers/kinds"
+	"github.com/cernide/operator/controllers/managers"
 )
 
 func (r *OperationReconciler) reconcileDaskJobOp(ctx context.Context, instance *operationv1.Operation) (ctrl.Result, error) {

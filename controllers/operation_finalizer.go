@@ -5,7 +5,7 @@ import (
 
 	corev1 "k8s.io/api/core/v1"
 
-	operationv1 "github.com/polyaxon/operator/api/v1"
+	operationv1 "github.com/cernide/operator/api/v1"
 )
 
 // AddLogsFinalizer Adds finalizer by the reconciler

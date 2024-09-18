@@ -1,4 +1,4 @@
-go mod init github.com/polyaxon/operator
+go mod init github.com/cernide/operator
 
 kubebuilder init --domain polyaxon.com --owner="Polyaxon, Inc" --license=apache2
 

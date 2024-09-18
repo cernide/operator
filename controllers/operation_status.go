@@ -5,7 +5,7 @@ import (
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	operationv1 "github.com/polyaxon/operator/api/v1"
+	operationv1 "github.com/cernide/operator/api/v1"
 )
 
 // AddStartTime Adds starttime field by the reconciler

@@ -8,7 +8,7 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus"
 
-	operationv1 "github.com/polyaxon/operator/api/v1"
+	operationv1 "github.com/cernide/operator/api/v1"
 )
 
 // Metrics exposed by the operator
