@@ -14,9 +14,9 @@ import (
 	operationv1 "github.com/cernide/operator/api/v1"
 	"github.com/cernide/operator/controllers/config"
 
-	polyaxonSDK "github.com/cernide/sdks/go/http_client/v1/service_client"
-	"github.com/cernide/sdks/go/http_client/v1/service_client/runs_v1"
-	"github.com/cernide/sdks/go/http_client/v1/service_model"
+	polyaxonSDK "github.com/cernide/sdks/v2/go/http_client/v1/service_client"
+	"github.com/cernide/sdks/v2/go/http_client/v1/service_client/runs_v1"
+	"github.com/cernide/sdks/v2/go/http_client/v1/service_model"
 )
 
 const (
